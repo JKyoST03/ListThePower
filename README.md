@@ -13,11 +13,10 @@
     ¡Categorizalos a todos!
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">Ver Demo</a>
     &middot;
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Reportar un Bug</a>
+    <a href="#">Reportar un Bug</a>
     &middot;
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Pedir alguna característica Feature</a>
+    <a href="#">Pedir alguna característica</a>
   </p>
 </div>
 
@@ -31,7 +30,6 @@
         <li><a href="#hecho-con">Hecho con</a></li>
       </ul>
     </li>
-    <li>  
     <li><a href="#contacto">Contacto</a></li>
   </ol>
 </details>
