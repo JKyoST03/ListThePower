@@ -46,7 +46,7 @@ La idea de este proyecto es a través de una cosa tan amplia como es, que person
 ¿Porqué?:
 * Incentivar al debate y pensamiento de las aptitudes de cada personaje entre personas 🧠
 * Por crear especializado en este ámbito y en el que poder añadir personajes con comodidad ☺️
-* Poder formas comunidades de personas dentro de la web para, lo susodicho ya, incentivar al debate sano entre personas 👥
+* Poder formar comunidades de personas dentro de la web para, lo susodicho ya, incentivar al debate sano entre personas 👥
 
 <p align="right">(<a href="#readme-top">Volver a la parte superior</a>)</p>
 
