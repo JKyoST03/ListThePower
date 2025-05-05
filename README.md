@@ -3,33 +3,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/JKyoST03/ListThePower">
+    <img src="https://raw.githubusercontent.com/tetoterritory10/icons/refs/heads/main/IconsNotMine/ListTheRoxas.png" alt="Logo">
   </a>
 
-  <h3 align="center">List the Power</h3>
+  <h2 align="center">List the Power</h2>
 
-  <p align="center">
+  <h4 align="center">
     ¡Categorizalos a todos!
-    <br />
-    <br />
-    &middot;
-    <a href="#">Reportar un Bug</a>
-    &middot;
-    <a href="#">Pedir alguna característica</a>
-  </p>
+  </h4>
 </div>
 
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Tabla de contenidos</summary>
   <ol>
-    <li>
-      <a href="#sobre-el-proyecto">Sobre el proyecto</a>
-      <ul>
-        <li><a href="#hecho-con">Hecho con</a></li>
-      </ul>
-    </li>
+    <li><a href="#sobre-el-proyecto">Sobre el proyecto</a></li>
+    <li><a href="#tecnologias-empleadas">Tecnologias empleadas</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ol>
 </details>
@@ -52,11 +42,11 @@ La idea de este proyecto es a través de una cosa tan amplia como es, que person
 
 
 
-### Hecho con
+### Tecnologias empleadas
 La aplicación web ha sido construida con las siguientes tecnologías
 
 * [![Laravel][Laravel.com]][Laravel-url]
-* [![Vue][Vue.js]][Vue-url]
+* [![Livewire][Livewire.com]][Livewire-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">Volver a la parte superior</a>)</p>
@@ -103,3 +93,5 @@ Enlace del proyecto: [https://github.com/JKyoST03/ListThePower](https://github.c
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Livewire.com]: https://img.shields.io/badge/Livewire-3C3C3C?style=for-the-badge&logo=laravel&logoColor=white
+[Livewire-url]: https://livewire.laravel.com
