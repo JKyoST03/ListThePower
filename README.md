@@ -20,6 +20,7 @@
   <ol>
     <li><a href="#sobre-el-proyecto">Sobre el proyecto</a></li>
     <li><a href="#tecnologias-empleadas">Tecnologias empleadas</a></li>
+    <li><a href="#proceso-de-instalación">Proceso de instalación</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ol>
 </details>
@@ -51,12 +52,54 @@ La aplicación web ha sido construida con las siguientes tecnologías
 
 <p align="right">(<a href="#readme-top">Volver a la parte superior</a>)</p>
 
+<!-- INSTALLATION -->
+## Proceso de instalación
+
+En este proyecto viene todo ya preparado para ejecutarse con docker y compose.
+
+    cp .env.example .env
+    sudo chown -R www-data:www-data storage
+    npm install && composer install
+
+Ahora haremos el despliegue de los contenedores con el siguiente comando.
+
+    docker compose up --build
+   
+*Recomendación*: Modifica el docker-compose.yml a tu gusto para darle el nombre que gustes a cada contenedor, darle un nombre propio a la base de datos, etc y que no haya conflictos de ningún tipo.
+
+También hay que generar una clave, si esta instalado php 8.2 en el ordenador se puede generar sin problema, en caso de que no, aquí dejaré un comando para acceder al contenedor de php que se hace en el despliegue de default si no se toca el docker.compose.yml
+
+    docker exec -it NOMBRE_CONTENDOR_PHP bash
+
+    php artisan key:generate
+
+Una vez hecho esto quedaría modificar el archivo .env y meterle de donde viene la base de datos, modificala y dejala tal que así:
+    
+    DB_CONNECTION=mariadb
+    DB_HOST=NOMBRE_DE_LA_TABLA
+    DB_PORT=3306
+    DB_DATABASE=NOMBRE_CONTAINER_DB
+    DB_USERNAME=root
+    DB_PASSWORD=secret
+
+Y no olvidarse poner de MAIL_HOST el contendor que sirve para hacer pruebas de correos.
+(Aquí dejo el nombre de default del contendor)
+
+    MAIL_HOST=mailhog
+
+Y ya para acabar, con todo hecho, lanza la migración de la base de datos, y debería funcionar correctamente
+
+    php artisan migrate
+
+<p align="right">(<a href="#readme-top">Volver a la parte superior</a>)</p>
+
 <!-- CONTACT -->
 ## Contacto
 
 JKST - josalbarr@alb.edu.gva.es
 
 Enlace del proyecto: [https://github.com/JKyoST03/ListThePower](https://github.com/JKyoST03/ListThePower)
+
 
 <p align="right">(<a href="#readme-top">Volver a la parte superior</a>)</p>
 
