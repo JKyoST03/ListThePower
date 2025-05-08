@@ -60,6 +60,7 @@ En este proyecto viene todo ya preparado para ejecutarse con docker y compose.
     cp .env.example .env
     sudo chown -R www-data:www-data storage
     npm install && composer install
+    php artisan key:generate
 
 Ahora haremos el despliegue de los contenedores con el siguiente comando.
 
@@ -70,8 +71,6 @@ Ahora haremos el despliegue de los contenedores con el siguiente comando.
 También hay que generar una clave, si esta instalado php 8.2 en el ordenador se puede generar sin problema, en caso de que no, aquí dejaré un comando para acceder al contenedor de php que se hace en el despliegue de default si no se toca el docker.compose.yml
 
     docker exec -it NOMBRE_CONTENDOR_PHP bash
-
-    php artisan key:generate
 
 Una vez hecho esto quedaría modificar el archivo .env y meterle de donde viene la base de datos, modificala y dejala tal que así:
     
