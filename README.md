@@ -66,6 +66,10 @@ Ahora haremos el despliegue de los contenedores con el siguiente comando.
 
     docker compose up --build
    
+No olvidarse que esto al funcionar con jetstream, necesita de vite, así que has de hacer un:
+
+    npm run dev
+  
 *Recomendación*: Modifica el docker-compose.yml a tu gusto para darle el nombre que gustes a cada contenedor, darle un nombre propio a la base de datos, etc y que no haya conflictos de ningún tipo.
 
 También hay que generar una clave, si esta instalado php 8.2 en el ordenador se puede generar sin problema, en caso de que no, aquí dejaré un comando para acceder al contenedor de php que se hace en el despliegue de default si no se toca el docker.compose.yml
