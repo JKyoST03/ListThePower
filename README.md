@@ -61,6 +61,7 @@ En este proyecto viene todo ya preparado para ejecutarse con docker y compose.
     sudo chown -R $USER:www-data storage
     npm install && composer install
     php artisan key:generate
+    php artisan storage:link
 
 Ahora haremos el despliegue de los contenedores con el siguiente comando.
 
