@@ -58,7 +58,7 @@ La aplicación web ha sido construida con las siguientes tecnologías
 En este proyecto viene todo ya preparado para ejecutarse con docker y compose.
 
     cp .env.example .env
-    sudo chown -R $USER:www-data storage
+    sudo chown -R www-data:www-data storage
     npm install && composer install
     php artisan key:generate
     php artisan storage:link
