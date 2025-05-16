@@ -60,11 +60,27 @@
 </div>
 
         <!-- MAIN -->
-        <main class="flex flex-col items-center justify-center h-44 bg-stone-800">
-            <h1 class="text-4xl text-[#EDEDEC] font-bold">¡Bienvenido a List the Power!</h1>
-            <p class="text-[#EDEDEC] text-lg mt-4">List the Power es una página web dedicada a la votación de personajes por ver quien es respectivamente más poderoso dentro de su mundo, y fuera de este.</p>
+        <main class="flex flex-col items-center justify-center h-fit bg-stone-800">
+            <h1 class="text-5xl text-[#EDEDEC] font-bold mt-3">¡Bienvenido a List the Power!</h1>
+            <p class="text-[#EDEDEC] text-lg mt-4 text-center">En List the Power puedes votar y debatir por quien la posición de los personajes en nuestros rankings, y por encima crear los tuyos propios con tus amigos.<br>¡Empieza ya!</p>
 
-            <h2 class="text-3xl text-[#EDEDEC] font-bold">¿Donde quieres ir?</h2>
+            <h2 class="text-2xl mt-6 text-[#EDEDEC] font-bold">¿Donde quieres ir?</h2>
+            
+            <div class="pt-2 gap-4">
+                <a href="#" class="px-3 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm">Top Global</a>
+                <a href="#" class="px-3 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm">Tops de franquicias</a>
+                <a href="#" class="px-3 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm">Tops personales</a>
+            </div>
+
+        <hr class="white-300 w-full border-2  mt-6">
+        
+            <div class="flex flex-col items-center justify-center h-fit bg-stone-800 mt-2">
+                <h1 class="text-5xl text-[#EDEDEC] font-bold mt-3">¿Qué es List the Power?</h1>
+                <span class="text-center">
+                    <p class="text-[#EDEDEC] text-lg mt-4">List the Power es una página web dedicada a la rankings entre personajes de ficción para ver quien es es más capaz para poder posicionarlo más arriba en el ranking de poder, y todo pudiendo crear después tus propios rankings y compartirlos con tus amigos.<br>¡No dudes en registrarte y empezar a crear tus propios rankings!</p>
+                    </p>
+                </span>
+            </div>
         </main>
 </body>
 </html>
