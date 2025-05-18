@@ -21,7 +21,11 @@
         <x-banner />
 
         <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-menu')
+            @auth
+                @livewire('navigation-menu')
+            @else
+                @include('logout-menu')
+            @endauth
 
             <!-- Page Heading -->
             @if (isset($header))

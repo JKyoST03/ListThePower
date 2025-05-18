@@ -17,7 +17,13 @@
     </head>
     <body class="bg-blue-800">
         <header class="bg-stone-900">
-            <div class="absolute left-0 flex items-center">
+            @auth
+                @livewire('navigation-menu')
+            @else
+                @include('logout-menu')
+            @endauth
+
+            {{-- <div class="absolute left-0 flex items-center">
                 <img class="" src="https://raw.githubusercontent.com/tetoterritory10/icons/refs/heads/main/IconsNotMine/kaz_fist_white.png" width="80" height="80" alt="logotipoList">
                 <h1 class="text-5xl text-[#EDEDEC] font-bold self-center whitespace-nowrap">List the Power</h1>
             </div>
@@ -26,9 +32,19 @@
                 @if (Route::has('login'))
                     @auth
                         <a
+                            href="#"
+                            class="px-1 py-2 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm leading-normal">
+                            Top global
+                        </a>
+                        <a
+                            href="{{ route('tops-franquicias.index') }}"
+                            class="px-1 py-2 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm leading-normal">
+                            Tops de franquicias
+                        </a>
+                        <a
                             href="{{ url('/dashboard') }}"
-                            class="px-5 py-1.5 text-[#EDEDEC] hover:border-[#EDEDEC] border rounded-sm leading-normal">
-                            Dashboard
+                            class="px-1 py-2 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm leading-normal">
+                            Panel del usuario
                         </a>
                 @else
                         <a
@@ -45,7 +61,7 @@
                     @endif
                 @endauth
             @endif
-        </nav>
+        </nav> --}}
     </header>
     <div>
 <!-- HEADER INTRO -->
@@ -68,8 +84,8 @@
             
             <div class="pt-2 gap-4">
                 <a href="#" class="px-3 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm">Top Global</a>
-                <a href="#" class="px-3 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm">Tops de franquicias</a>
-                <a href="#" class="px-3 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm">Tops personales</a>
+                <a href=" {{ route('tops-franquicias.index') }}" class="px-3 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm">Tops de franquicias</a>
+                <a href="#" class="px-3 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm">Mis tops personales</a>
             </div>
 
         <hr class="white-300 w-full border-2  mt-6">
