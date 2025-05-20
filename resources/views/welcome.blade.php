@@ -17,52 +17,8 @@
     </head>
     <body class="bg-blue-800">
         <header class="bg-stone-900">
-            @auth
-                @livewire('navigation-menu')
-            @else
-                @include('logout-menu')
-            @endauth
-
-            {{-- <div class="absolute left-0 flex items-center">
-                <img class="" src="https://raw.githubusercontent.com/tetoterritory10/icons/refs/heads/main/IconsNotMine/kaz_fist_white.png" width="80" height="80" alt="logotipoList">
-                <h1 class="text-5xl text-[#EDEDEC] font-bold self-center whitespace-nowrap">List the Power</h1>
-            </div>
-
-            <nav class="flex justify-end items-center gap-4 px-5 pt-8 text-lg">
-                @if (Route::has('login'))
-                    @auth
-                        <a
-                            href="#"
-                            class="px-1 py-2 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm leading-normal">
-                            Top global
-                        </a>
-                        <a
-                            href="{{ route('tops-franquicias.index') }}"
-                            class="px-1 py-2 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm leading-normal">
-                            Tops de franquicias
-                        </a>
-                        <a
-                            href="{{ url('/dashboard') }}"
-                            class="px-1 py-2 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm leading-normal">
-                            Panel del usuario
-                        </a>
-                @else
-                        <a
-                            href="{{ route('login') }}"
-                            class="px-1 py-2 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm leading-normal">
-                            Iniciar sesión
-                        </a>
-                    @if (Route::has('register'))
-                            <a
-                                href="{{ route('register') }}"
-                                class="px-1 py-2 text-[#EDEDEC] border border-transparent hover:border-[#EDEDEC] rounded-sm leading-normal">
-                                Registrarse
-                            </a>
-                    @endif
-                @endauth
-            @endif
-        </nav> --}}
-    </header>
+            @livewire('navigation-menu')
+        </header>
     <div>
 <!-- HEADER INTRO -->
 <div class="relative flex flex-col items-center justify-center h-screen bg-gray-600/70">
