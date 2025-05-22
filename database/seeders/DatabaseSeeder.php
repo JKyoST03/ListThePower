@@ -6,6 +6,10 @@ use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+use Database\Seeders\FranchiseSeeder;
+use Database\Seeders\DMCCharacterSeeder;
+use Database\Seeders\FFVIICharacterSeeder;
+use Database\Seeders\DBCharacterSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,12 +18,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
         User::factory()->create([
             'name' => 'Lea',
             'email' => 'a@a.a',
             'password' => Hash::make('a'),
+        ]);
+
+
+        $this->call([
+            FranchiseSeeder::class,
+            DMCCharacterSeeder::class, 
+            FFVIICharacterSeeder::class, 
+            DBCharacterSeeder::class, 
         ]);
     }
 }
