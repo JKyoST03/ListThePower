@@ -18,4 +18,9 @@ class Character extends Model
         'image',
         'franchise_id',
     ];
+
+    public function franchise()
+    {
+        return $this->belongsTo(Franchise::class);
+    }
 }

@@ -18,19 +18,22 @@ class FranchiseSeeder extends Seeder
         Franchise::insert([
             [
                 'id' => '1',
-                'name' => 'devil-my-cry',
+                'name' => 'Devill My Cry',
+                'raw' => 'devil-my-cry',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
             [
                 'id' => '2',
-                'name' => 'dragon-ball',
+                'name' => 'Dragon Ball',
+                'raw' => 'dragon-ball',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
             [
                 'id' => '3',
-                'name' => 'final-fantasy-vii',
+                'name' => 'Final Fantasy VII',
+                'raw' => 'final-fantasy-vii',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],

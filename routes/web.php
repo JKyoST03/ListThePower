@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\TopFranquiciaController;
+use App\Http\Controllers\Tops\TopFranquiciaController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -18,4 +18,5 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
 // TOPS POR FRANQUICIAS //
 Route::prefix('/tops-franquicias')->group(function () {
     Route::get('/', [TopFranquiciaController::class, 'index'])->name('tops-franquicias.index');
+    Route::get('/franchise/{id}', [TopFranquiciaController::class, 'indexFranchise'])->name('tops-franquicias.franchise');
 });

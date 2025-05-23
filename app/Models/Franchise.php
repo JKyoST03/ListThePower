@@ -12,5 +12,11 @@ class Franchise extends Model
 
     protected $fillable = [
         'name',
+        'raw',
     ];
+
+    public function characters()
+    {
+        return $this->hasMany(Character::class);
+    }
 }
