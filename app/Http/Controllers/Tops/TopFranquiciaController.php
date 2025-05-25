@@ -14,8 +14,9 @@ class TopFranquiciaController extends Controller
         return view('top-franquicia.main', compact('franchises'));
     }
 
-        public function indexFranchise(){
-        $franchises = Franchise::all();
-        return view('top-franquicia.franchise', compact('franchises'));
+        public function indexFranchise(Request $request){
+            $franchise = Franchise::where('id', '=', $request->route('id'))->first();
+            $characters = Character::where('franchise_id', '=', $request->route('id'))->paginate('6');
+        return view('top-franquicia.franchise', compact('franchise', 'characters'));
     }
 }

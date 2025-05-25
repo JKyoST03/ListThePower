@@ -129,7 +129,7 @@ class FFVIICharacterSeeder extends Seeder
             [
                 'name' => 'Caith Sith',
                 'description' => 'Un gato robot que puede hablar y tiene la habilidad de controlar a los enemigos con su magia.',
-                'image' => 'cait-sith-ffvii.png',
+                'image' => 'caith-sith-ffvii.png',
                 'habilities' => json_encode([
                     'Habilidades de combate excepcionales',
                     'Uso de magia y habilidades especiales',

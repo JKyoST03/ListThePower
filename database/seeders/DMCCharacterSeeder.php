@@ -50,10 +50,20 @@ class DMCCharacterSeeder extends Seeder
                 'description' => 'El hermano gemelo de Dante, un guerrero poderoso que busca obtener el poder de su padre.',
                 'image' => 'vergil-dmc.png',
                 'habilities' => json_encode([
-                    '',
+                    'This, is power',
+                    'Transformación en demonio',
+                    'Uso de magia y habilidades demoníacas',
+                    'Agilidad y velocidad sobrehumanas',
+                    'Resistencia a los ataques físicos y mágicos',
+                    'Capacidad para absorber almas demoníacas',
+                    'Uso de poderes elementales como fuego y hielo',
+                    'Uso de habilidades especiales como Devil Trigger',
                 ]),
                 'disadvantages' => json_encode([
-                    '',
+                    'Su arrogancia y confianza excesiva pueden llevarlo a subestimar a sus enemigos',
+                    'Su deseo de obtener el poder de su padre puede nublar su juicio y llevarlo a tomar decisiones arriesgadas',
+                    'Su falta de empatía y conexión emocional con los demás puede hacer que se sienta solo y aislado',
+                    'Su obsesión por superar a Dante puede llevarlo a cometer errores',                    
                 ]),
                 'franchise_id' => $devilMyCryId,
                 'created_at' => Carbon::now(),
@@ -61,7 +71,7 @@ class DMCCharacterSeeder extends Seeder
             ],
             [
                 'name' => 'Arkham',
-                'description' => 'Un demonio que busca obtener el poder de Sparda y manipula a Dante, Vergil y Lary para sus propios fines.',
+                'description' => 'Un demonio que busca obtener el poder de Sparda y manipula a Dante, Vergil y Lady para sus propios fines.',
                 'image' => 'arkham-dmc.png',
                 'habilities' => json_encode([
                     'Manipulación de la magia demoníaca',

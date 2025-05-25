@@ -18,5 +18,5 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
 // TOPS POR FRANQUICIAS //
 Route::prefix('/tops-franquicias')->group(function () {
     Route::get('/', [TopFranquiciaController::class, 'index'])->name('tops-franquicias.index');
-    Route::get('/franchise/{id}', [TopFranquiciaController::class, 'indexFranchise'])->name('tops-franquicias.franchise');
+    Route::get('/franchise/{id}', [TopFranquiciaController::class, 'indexFranchise'])->name('tops-franquicias.franchise')->middleware('exist.franchise');
 });

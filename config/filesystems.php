@@ -50,7 +50,7 @@ return [
         'franchises' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage/public/franchises',
+            'url' => env('APP_URL').'/storage/franchises',
             'visibility' => 'public',
             'throw' => false,
             'report' => false,
