@@ -23,15 +23,15 @@
                     </svg>
                 </a>
 
-                <div class="flex space-x-2">
-                    <x-comment-button class="cursor-pointer" />
-                    <x-vote-button class="cursor-pointer" />
+                <div class="flex space-x-4">
+                    <x-comment-button wire:click="vote" class="cursor-pointer"/>
+
+                    <div class="flex items-center">
+                        <span class="text-xl">{{ $votes }}</span>
+                        <x-vote-button wire:click='vote' class="cursor-pointer"/>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-{{-- 
-    * Voton de botar super bonico
-    * Boton de comentar
---}}

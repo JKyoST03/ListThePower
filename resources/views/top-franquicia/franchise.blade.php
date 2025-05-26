@@ -1,6 +1,10 @@
 <x-app-layout>
     <h1 class="text-5xl font-bold text-center mt-4">{{ $franchise->name }}</h1>
 
+    <div class="fixed top-24 right-8 w-80 z-50 bg-white shadow-lg rounded-lg p-4">
+        @livewire('top-tier-character', ['character' => $characters])
+    </div>
+
     <div class="flex justify-center mt-5 mb-12">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-20 self-center">
             @foreach ($characters as $character)

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class FranchiseVote extends Model
+class Vote extends Model
 {
     /** @use HasFactory<\Database\Factories\FranchiseVoteFactory> */
     use HasFactory;

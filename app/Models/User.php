@@ -64,4 +64,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function franchiseVotes()
+    {
+        return $this->belongsToMany(Character::class, 'votes', 'user_id', 'character_id')->withPivot('user_id');
+    }
 }
