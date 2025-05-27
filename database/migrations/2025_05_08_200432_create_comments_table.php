@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('character_franchise_comments', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->text('content');
             $table->foreignId('character_id')->references('id')->on('characters')->onDelete('cascade');
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('character_franchise_comments');
+        Schema::dropIfExists('comments');
     }
 };

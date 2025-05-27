@@ -24,7 +24,7 @@
                 </a>
 
                 <div class="flex space-x-4">
-                    <x-comment-button wire:click="vote" class="cursor-pointer"/>
+                    <x-comment-button wire:click="" class="cursor-pointer"/>
 
                     <div class="flex items-center">
                         <span class="text-xl">{{ $votes }}</span>

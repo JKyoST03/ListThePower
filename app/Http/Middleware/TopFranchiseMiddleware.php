@@ -20,7 +20,7 @@ class TopFranchiseMiddleware
         $franchiseId = $request->route('id');
 
         if (!$franchiseId || !Franchise::find($franchiseId)) {
-            abort(404, 'Franchise not found');
+            abort(404, 'Franquicia inexistente');
         }
 
         return $next($request);

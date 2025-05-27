@@ -1,8 +1,8 @@
 <x-app-layout>
     <h1 class="text-5xl font-bold text-center mt-4">{{ $franchise->name }}</h1>
 
-    <div class="fixed top-24 right-8 w-80 z-50 bg-white shadow-lg rounded-lg p-4">
-        @livewire('top-tier-character', ['character' => $characters])
+    <div class="fixed top-24 right-8 w-80 bg-white shadow-lg rounded-lg p-4">
+        @livewire('top-tier-character', ['franchise' => $franchise])
     </div>
 
     <div class="flex justify-center mt-5 mb-12">

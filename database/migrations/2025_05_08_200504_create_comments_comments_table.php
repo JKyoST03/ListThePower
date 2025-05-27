@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('franchise_comments_comments', function (Blueprint $table) {
+        Schema::create('comments_comments', function (Blueprint $table) {
             $table->id();
             $table->text('content');
             $table->foreignId('user_id')->references('id')->on('users');
             $table->foreignId('where_id')->references('id')->on('type_of_comments');
-            $table->foreignId('comment_id')->references('id')->on('character_franchise_comments');
+            $table->foreignId('comment_id')->references('id')->on('comments');
             $table->timestamps();
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('franchise_comments_comments');
+        Schema::dropIfExists('comments_comments');
     }
 };
