@@ -12,6 +12,7 @@ class FranchiseCharacters extends Component
 {
     public $character;
     public $franchiseIdentifier;
+    public $showComments = false;
 
     public function mount($character)
     {
@@ -45,8 +46,8 @@ class FranchiseCharacters extends Component
         }
     }
 
-    public function topPowerLevel(){
-
+    public function openComments(){
+        $this->showComments = true;
     }
 
     protected function loginRedirect($id){

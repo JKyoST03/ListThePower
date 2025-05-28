@@ -1,4 +1,4 @@
-<div class="text-center text-xl">
+<div class="text-center text-xl text-[#110303]">
     <div>
         <ul>
             @foreach ($franchiseCharacters as $character)
