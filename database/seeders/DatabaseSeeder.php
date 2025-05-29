@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             TypeOfVoteSeeder::class,
+            TypeOfCommentSeeder::class,
             FranchiseSeeder::class,
             DMCCharacterSeeder::class, 
             FFVIICharacterSeeder::class, 

@@ -16,4 +16,8 @@ class Comment extends Model
         'character_id',
         'where_id',
     ];
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }

@@ -2,19 +2,49 @@
 
 namespace App\Livewire;
 
+use App\Models\Comment;
+use App\Models\TypeOfComment;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class CommentsBar extends Component
 {
 
     public $character;
+    public $showComments;
+    public $newComment;
+    public $franchiseIdentifier;
     
-    public function mount($character)
+    public function mount($character, $showComments)
     {
         $this->character = $character;
+        $this->showComments = $showComments;
+        $this->franchiseIdentifier = TypeOfComment::where('where', '=', 'Franchises')->first()->id;
     }
+
+    public function closeComments()
+    {
+        if ($this->showComments === false) {
+            $this->dispatch('closeComments');
+        }
+    }
+
+    public function postComment(){
+        $comment = new Comment;
+
+        $comment->content = $this->newComment;
+        $comment->user_id = Auth::id();
+        $comment->character_id = $this->character->id;
+        $comment->where_id = $this->franchiseIdentifier;
+
+        $comment->save();
+
+        $this->newComment = null;
+    }
+    
     public function render()
     {
-        return view('livewire.comments');
+        $characterComments = $this->character->comments()->where("where_id", $this->franchiseIdentifier)->get();
+        return view('livewire.comments-bar', compact('characterComments'));
     }
 }

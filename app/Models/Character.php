@@ -23,6 +23,11 @@ class Character extends Model
     {
         return $this->belongsTo(Franchise::class);
     }
+
+        public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
     public function userVotes()
     {
         return $this->belongsToMany(User::class, 'votes', 'character_id', 'user_id')->withPivot('character_id');
