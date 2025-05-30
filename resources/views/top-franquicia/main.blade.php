@@ -11,7 +11,7 @@
                         <h3 class="text-2xl font-semibold mb-2 text-center">{{ $franchise->name }}</h3>
                     </div>
                 </a>
-                @endforeach
+            @endforeach
             </div>
         </div>
     </section>
