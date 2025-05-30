@@ -59,7 +59,7 @@
                                 </x-dropdown-link>
 
                                 <x-dropdown-link href="{{ route('profile.show') }}">
-                                    {{ __('Perfil') }}
+                                    {{ __('Editar perfil') }}
                                 </x-dropdown-link>
 
 
@@ -136,7 +136,7 @@
                     {{ __('Navegación del usuario') }}
                 </div>
                     <x-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
-                        {{ __('Perfil') }}
+                        {{ __('Editar perfil') }}
                     </x-responsive-nav-link>
 
                     <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
