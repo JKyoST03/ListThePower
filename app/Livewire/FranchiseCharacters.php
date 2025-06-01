@@ -13,7 +13,11 @@ class FranchiseCharacters extends Component
     public $character;
     public $franchiseIdentifier;
     public $showComments = false;
-    protected $listeners = ['closeComments' => 'closeComments'];
+    public $showDetails = false;
+    protected $listeners = [
+        'closeComments' => 'closeComments',
+        'closeDetails' => 'closeDetails',
+    ];
 
     public function mount($character)
     {
@@ -55,6 +59,13 @@ class FranchiseCharacters extends Component
         $this->showComments = false;
     }
 
+    public function openDetails(){
+        $this->showDetails = true;
+    }
+
+    public function closeDetails(){
+        $this->showDetails = false;
+    }
     protected function loginRedirect($id){
         if(empty($id)){
             return false;
