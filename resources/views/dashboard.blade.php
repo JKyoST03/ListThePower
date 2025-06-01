@@ -16,6 +16,12 @@
             <p class="mb-2">Crea tus propios tops con los personajes que quieras y compartelos con tus conocidos 
                 <br>
                 ¡Poneros a debatir quien creeis que es más fuerte!.</p>
+
+                <a href="{{ route('top-personal.index') }}">
+                    <button type="button" class="text-white bg-gradient-to-r from-[#f66767b2] via-[#ef4444be] to-[#dc2626ad] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 shadow-lg shadow-red-500/50 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-3 mt-3">
+                        Crea un ranking personal
+                    </button>
+                </a>
         </div>
 
         {{-- DEMO --}}

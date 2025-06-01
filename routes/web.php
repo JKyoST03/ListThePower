@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Tops\TopFranquiciaController;
 use App\Http\Controllers\Tops\TopGlobalController;
+use App\Http\Controllers\Tops\TopPersonalController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -11,9 +12,9 @@ Route::get('/', function () {
 // AUTH VERIFICATION // 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function () {
     // DASHHBOARD DEL USUARIO //
-    Route::get('/dashboard', function () {
+    Route::get('/panel-usuario', function () {
         return view('dashboard');
-    })->name('dashboard');
+    })->name('panel-usuario');
 });
 
 // TOPS POR FRANQUICIAS //
@@ -25,4 +26,9 @@ Route::prefix('/tops-franquicias')->group(function () {
 // TOPS GLOBAL //
 Route::prefix('/tops-global')->group(function () {
     Route::get('/', [TopGlobalController::class, 'index'])->name('top-global.index');
+});
+
+// TOPS GLOBAL //
+Route::prefix('/personal-top')->group(function () {
+    Route::get('/create', [TopPersonalController::class, 'index'])->name('top-personal.index')->middleware('auth:sanctum', config('jetstream.auth_session'), 'verified');
 });

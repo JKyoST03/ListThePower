@@ -15,7 +15,6 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    {{-- <x-nav-link href="#" :active="request()->routeIs('dashboard')"> --}}
                     <x-nav-link href="{{ route('top-global.index') }}" :active="request()->routeIs('top-global.index')">
                         <span class="text-[#EDEDEC]">{{ __('Top global') }}</span>
                     </x-nav-link>
@@ -54,7 +53,7 @@
                                     {{ __('Navegación del usuario') }}
                                 </div>
 
-                                <x-dropdown-link href="{{ route('dashboard') }}">
+                                <x-dropdown-link href="{{ route('panel-usuario') }}">
                                     {{ __('Panel del usuario') }}
                                 </x-dropdown-link>
 
@@ -139,7 +138,7 @@
                         {{ __('Editar perfil') }}
                     </x-responsive-nav-link>
 
-                    <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                    <x-responsive-nav-link href="{{ route('panel-usuario') }}" :active="request()->routeIs('panel-usuario')">
                         {{ __('Panel del usuario') }}
                     </x-responsive-nav-link>
 
@@ -165,7 +164,6 @@
                 </div>
                 
                 <!-- Tops -->
-                {{-- <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')"> --}}
                 <x-responsive-nav-link href="{{ route('top-global.index') }}" :active="request()->routeIs('top-global.index')">
                     {{ __('Top global') }}
                 </x-responsive-nav-link>
