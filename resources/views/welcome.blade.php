@@ -69,7 +69,7 @@
         </div>
 
         <div class="md:w-1/2 flex justify-center p-10 h-full">
-            <img src="https://github.com/TetoTerritory10/portraits/blob/main/1920x1086/globalLtP/global.png?raw=true" alt="Top global" class="rounded-xl shadow-lg w-screen h-full object-cover shadow-red-500/60 transition-shadow duration-300 hover:shadow-2xl hover:shadow-red-400/80">
+            <img src="https://github.com/TetoTerritory10/portraits/blob/main/1920x1086/globalLtP/global.png?raw=true" alt="Top global" class="rounded-xl shadow-lg w-screen h-full object-cover shadow-blue-500/60 transition-shadow duration-300 hover:shadow-2xl hover:shadow-blue-400/80">
         </div>
     </section>
 
@@ -87,7 +87,7 @@
         </div>
 
         <div class="md:w-1/2 flex justify-center p-10 h-full">
-            <img src="https://github.com/TetoTerritory10/portraits/blob/main/1920x1086/franchisesLtP/franchises.png?raw=true" alt="Top global" class="rounded-xl shadow-lg w-screen h-full object-cover shadow-blue-500/60 transition-shadow duration-300 hover:shadow-2xl hover:shadow-blue-400/80">
+            <img src="https://github.com/TetoTerritory10/portraits/blob/main/1920x1086/franchisesLtP/franchises.png?raw=true" alt="Top global" class="rounded-xl shadow-lg w-screen h-full object-cover shadow-red-500/60 transition-shadow duration-300 hover:shadow-2xl hover:shadow-red-400/80">
         </div>
     </section>
 
