@@ -3,7 +3,6 @@
 namespace App\Livewire;
 
 use App\Models\Comment;
-use App\Models\TypeOfComment;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
@@ -15,11 +14,11 @@ class CommentsBar extends Component
     public $newComment;
     public $franchiseIdentifier;
     
-    public function mount($character, $showComments)
+    public function mount($character, $showComments, $franchiseIdentifier)
     {
         $this->character = $character;
         $this->showComments = $showComments;
-        $this->franchiseIdentifier = TypeOfComment::where('where', '=', 'Franchises')->first()->id;
+        $this->franchiseIdentifier = $franchiseIdentifier;
     }
 
     public function closeComments()

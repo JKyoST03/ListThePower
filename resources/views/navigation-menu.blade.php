@@ -16,10 +16,10 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     {{-- <x-nav-link href="#" :active="request()->routeIs('dashboard')"> --}}
-                    <x-nav-link href="#">
+                    <x-nav-link href="{{ route('top-global.index') }}" :active="request()->routeIs('top-global.index')">
                         <span class="text-[#EDEDEC]">{{ __('Top global') }}</span>
                     </x-nav-link>
-                    <x-nav-link href="{{ route('tops-franquicias.index') }}" :active="request()->routeIs('tops-franquicias.index')">
+                    <x-nav-link href="{{ route('tops-franquicias.index') }}" :active="request()->routeIs('tops-franquicias.index', 'tops-franquicias.franchise')">
                         <span class="text-[#EDEDEC]">{{ __('Tops de franquicias') }}</span>
                     </x-nav-link>
                 </div>
@@ -166,11 +166,11 @@
                 
                 <!-- Tops -->
                 {{-- <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')"> --}}
-                <x-responsive-nav-link href="#">
-                    {{ __('Tops global') }}
+                <x-responsive-nav-link href="{{ route('top-global.index') }}" :active="request()->routeIs('top-global.index')">
+                    {{ __('Top global') }}
                 </x-responsive-nav-link>
 
-                <x-responsive-nav-link href="{{ route('tops-franquicias.index') }}" :active="request()->routeIs('tops-franquicias.index')">
+                <x-responsive-nav-link href="{{ route('tops-franquicias.index') }}" :active="request()->routeIs('tops-franquicias.index', 'tops-franquicias.franchise')">
                     {{ __('Tops de franquicias') }}
                 </x-responsive-nav-link>
 

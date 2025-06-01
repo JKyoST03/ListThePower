@@ -1,6 +1,6 @@
 <div>
-    @if($showComments)
-        @livewire('comments-bar', ['character' => $character, 'showComments' => $showComments, 'franchiseIdentifier' => $franchiseIdentifier])
+        @if($showComments)
+        @livewire('comments-bar', ['character' => $character, 'showComments' => $showComments , 'franchiseIdentifier' => $franchiseIdentifier])
     @endif
     <div class="max-w-sm bg-stone-800 border border-gray-200 rounded-lg shadow-sm">
         <div class="flex justify-center p-5"> 

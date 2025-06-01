@@ -45,7 +45,7 @@
 
         <!-- Navigation -->
         <div class="text-[#EDEDEC] text-xl pt-2 gap-4">
-            <a href="#"
+            <a href="{{ route('top-global.index') }}"
                 class="transition duration-300 ease-in-out hover:shadow-lg hover:scale-110 hover:bg-stone-700/60 rounded-xl px-4 py-2">Top
                 Global</a>
             <a href=" {{ route('tops-franquicias.index') }}"
