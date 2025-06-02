@@ -18,8 +18,8 @@
                         Habilidades
                     </h3>
                     <ul class="list-disc pl-5 space-y-1 text-gray-200">
-                        @foreach ($habilities as $habilitie)
-                            <li>{{ $habilitie }}</li>    
+                        @foreach ($abilities as $abilitie)
+                            <li>{{ $abilitie }}</li>    
                         @endforeach
                     </ul>
                 </div>

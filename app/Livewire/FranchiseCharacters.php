@@ -66,6 +66,7 @@ class FranchiseCharacters extends Component
     public function closeDetails(){
         $this->showDetails = false;
     }
+    
     protected function loginRedirect($id){
         if(empty($id)){
             return false;

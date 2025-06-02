@@ -18,8 +18,8 @@ class DetailedCharacter extends Component
 
     public function render()
     {
-        $habilities = json_decode($this->character->habilities, true);
+        $abilities = json_decode($this->character->habilities, true);
         $disadvantages = json_decode($this->character->disadvantages, true);
-        return view('livewire.detailed-character', compact('habilities','disadvantages'));
+        return view('livewire.detailed-character', compact('abilities','disadvantages'));
     }
 }
