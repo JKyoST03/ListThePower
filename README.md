@@ -106,9 +106,8 @@ Enlace del proyecto: [https://github.com/JKyoST03/ListThePower](https://github.c
 <p align="right">(<a href="#readme-top">Volver a la parte superior</a>)</p>
 
 ## Presentación
-## Presentación
   <a href="https://www.canva.com/design/DAGprBFlqJ8/OqOGf7s3cdZoDVooxGHc1Q/edit?utm_content=DAGprBFlqJ8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-    <img src="presentacion-demo-preview.png" alt="Logo">
+    <img src="presentacion-demo-preview.png" width="100" alt="Logo">
   </a>
 
 
