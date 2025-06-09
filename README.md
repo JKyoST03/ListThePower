@@ -30,8 +30,6 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre el proyecto
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 La idea de este proyecto es a través de una cosa tan amplia como es, que personaje es más fuerte que otro, dentro del mundo de la ficción, se busca crear un foro en el que la gente pueda debatir si un personaje puede ganar a uno u otro.
 
 ¿Porqué?:
@@ -107,6 +105,8 @@ Enlace del proyecto: [https://github.com/JKyoST03/ListThePower](https://github.c
 
 <p align="right">(<a href="#readme-top">Volver a la parte superior</a>)</p>
 
+## Presentación
+[![Presetacion del proyecto][presentacion-proyecto]](https://www.canva.com/design/DAGprBFlqJ8/OqOGf7s3cdZoDVooxGHc1Q/edit?utm_content=DAGprBFlqJ8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
