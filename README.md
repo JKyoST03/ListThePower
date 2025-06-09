@@ -107,7 +107,7 @@ Enlace del proyecto: [https://github.com/JKyoST03/ListThePower](https://github.c
 
 ## Presentación
   <a href="https://www.canva.com/design/DAGprBFlqJ8/OqOGf7s3cdZoDVooxGHc1Q/edit?utm_content=DAGprBFlqJ8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-    <img src="presentacion-demo-preview.png" width="500" alt="Logo">
+    <img style="text-align:center;" src="presentacion-demo-preview.png" width="500" alt="Logo">
   </a>
 
 
