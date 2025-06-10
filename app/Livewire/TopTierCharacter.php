@@ -16,7 +16,9 @@ class TopTierCharacter extends Component
     public function render()
     {
             $franchiseCharacters = Character::where('franchise_id', $this->franchise->id)
-                ->withCount('userVotes')
+                ->withCount(['userVotes' => function ($query) {
+                    $query->where('where_id', 1);
+                }])
                 ->orderByDesc('user_votes_count')
                 ->take(10)
                 ->get();

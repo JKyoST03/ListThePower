@@ -112,7 +112,12 @@ Enlace del proyecto: [https://github.com/JKyoST03/ListThePower](https://github.c
     </a>
 </div>
 
-
+## Laravel Clod Host
+<div align="center">
+    <a href="https://list-the-power-main-2ppow3.laravel.cloud/">
+        <img src="laravel-cloud.png" width="500" alt="Presentacion Preview">
+    </a>
+</div>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

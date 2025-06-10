@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use Database\Factories\VoteFactory;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -24,6 +25,17 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('a'),
         ]);
 
+        User::factory()->create([
+            'name' => 'Dante',
+            'email' => 'dante@gmail.com',
+            'password' => Hash::make('12345678'),
+        ]);
+
+        User::factory()->create([
+            'name' => 'Goku',
+            'email' => 'goku@gmail.com',
+            'password' => Hash::make('12345678'),
+        ]);
 
         $this->call([
             TypeOfVoteSeeder::class,
@@ -32,6 +44,7 @@ class DatabaseSeeder extends Seeder
             DMCCharacterSeeder::class, 
             FFVIICharacterSeeder::class, 
             DBCharacterSeeder::class, 
+            VotesSeeder::class,
         ]);
     }
 }
