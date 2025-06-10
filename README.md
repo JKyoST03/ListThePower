@@ -150,7 +150,7 @@ Enlace del proyecto: [https://github.com/JKyoST03/ListThePower](https://github.c
 [Laravel-url]: https://laravel.com
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
 [Livewire.com]: https://img.shields.io/badge/Livewire-3C3C3C?style=for-the-badge&logo=laravel&logoColor=white
 [Livewire-url]: https://livewire.laravel.com
+[Alpine.com]: https://img.shields.io/badge/Alpine.js-8BC0D0?style=for-the-badge&logo=alpine.js&logoColor=white
+[Alpine-url]: https://alpinejs.dev
