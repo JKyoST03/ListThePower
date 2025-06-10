@@ -6,6 +6,7 @@ use App\Models\Franchise;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class TopFranchiseMiddleware
 {
@@ -20,7 +21,7 @@ class TopFranchiseMiddleware
         $franchiseId = $request->route('id');
 
         if (!$franchiseId || !Franchise::find($franchiseId)) {
-            abort(404, 'Franquicia inexistente');
+            throw new NotFoundHttpException('Franquicia inexistente');
         }
 
         return $next($request);
