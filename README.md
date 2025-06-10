@@ -48,7 +48,7 @@ La aplicación web ha sido construida con las siguientes tecnologías
 
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![Livewire][Livewire.com]][Livewire-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Alpine.js][Alpine.com]][Alpine-url]
 
 <p align="right">(<a href="#readme-top">Volver a la parte superior</a>)</p>
 
