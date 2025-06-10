@@ -22,6 +22,8 @@
     <li><a href="#tecnologias-empleadas">Tecnologias empleadas</a></li>
     <li><a href="#proceso-de-instalación">Proceso de instalación</a></li>
     <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#presentación">Presentación</a></li>
+    <li><a href="#laravel-cloud-host">Laravel Cloud</a></li>
   </ol>
 </details>
 
